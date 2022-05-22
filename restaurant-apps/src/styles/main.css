@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+	background-color: var(--primary-color);
+  	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+  	background-color: white;
+  	min-height: 100vh;
+  	display: flex;
+  	flex-direction: column;
+}
+
+/*
+  AppBar
+*/
+ 
+.app-bar {
+	padding: 8px 16px;
+	background-color: #008000;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	gap: 10px;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+   
+  .app-bar .app-bar__menu {
+	display: flex;
+	align-items: center;
+  }
+   
+  .app-bar .app-bar__menu button {
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
+	padding: 8px;
+	cursor: pointer;
+  }
+   
+  .app-bar .app-bar__brand {
+	display: flex;
+	align-items: center;
+  }
+   
+  .app-bar .app-bar__brand h1 {
+	color: #db0000;
+	text-transform: uppercase;
+	font-size: 22px;
+	user-select: none;
+  }
+   
+  .app-bar .app-bar__navigation {
+	position: absolute;
+	top: 50px;
+	left: -180px;
+	width: 150px;
+	transition: all 0.3s;
+	padding: 8px;
+	background-color: #008000;
+	overflow: hidden;
+  }
+   
+  .app-bar .app-bar__navigation.open {
+	left: 0;
+  }
+   
+  .app-bar .app-bar__navigation ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	padding: 8px;
+	margin-bottom: 5px;
+	width: 100%;
+  }
+
+  #hamburgerButton {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-size: 32px;
+	margin: 0 5%;
+	display: block;
+	min-width: 44px;
+	min-height: 44px;
+  }
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+}
+
+.hero__inner {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.hero__title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.hero__tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*
+ * main
+ */
+
+ main {
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  .container {
+	margin: 2em 10%;
+	padding: 1em;
+  }
+  
+  .main-content__title {
+	text-align: center;
+	margin-bottom: 0.5em;
+  }
+  
+  #explore-restaurant {
+	display: grid;
+	grid-row-gap: 1.5em;
+	padding-top: 1.5em;
+  }
+  
+  /*
+   * Cards
+   */
+  
+  .card {
+	width: 100%;
+	text-align: justify;
+	transition: 0.3s;
+	cursor: pointer;
+	background-color: var(--primary-color);
+  }
+  
+  .card:hover {
+	box-shadow: 10px 10px 5px 0 var(--secondary-color);
+  }
+  
+  .card-a-tag {
+	text-decoration: none;
+	color: var(--font-color);
+  }
+  
+  .card-rating {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	font-size: large;
+	background-color: #008000;
+	padding: 0.4em 1.3em;
+	z-index: 1;
+  }
+  
+  .card-rating .fa {
+	font-size: smaller;
+	padding: 0.3em 0.8em 0.3em 0;
+	color: yellow;
+  }
+  
+  .img-container {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	max-height: 600px;
+  }
+  
+  .card-image {
+	width: 100%;
+	height: 270px;
+	object-fit: cover;
+	object-position: center;
+  }
+  
+  .card-content {
+	padding: 1.4em 2em;
+	font-size: small;
+	text-align: center;
+  }
+  
+  .card-content-title {
+	font-weight: bold;
+	padding-bottom: 0.376em;
+	color: #008000;
+  }
+
+  .card-city {
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .truncate {
+	margin-bottom: 10px;
+	font-size: 13px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+  }
+  
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #008000;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+footer p {
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 3px;
+}
+
+ .skip-link {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	background-color: #bf1722;
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none
+}
+.skip-link:focus {
+	top: 100px
+}

@@ -1,0 +1,50 @@
+/*
+ *  root settings
+*/
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #f0e3ca;
+    --font-color: #1b1a17;
+    --btn: #008000;
+    --btn-hover: #024702;
+    --image-color: linear-gradient(
+      1deg,
+      rgb(255 207 126 / 40%) 3%,
+      rgb(0 0 0 / 40%) 30%
+    );
+  }
+  
+  /* Button */
+  
+  .btn {
+    margin: 2em;
+    padding: 0.5em 1em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--btn);
+    border: 1px solid transparent;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .submit-btn {
+    padding: 0.5em 1em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--btn);
+    border: 1px solid transparent;
+    font-size: large;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover,
+  .submit-btn:hover {
+    background-color: #024702;
+  }  
